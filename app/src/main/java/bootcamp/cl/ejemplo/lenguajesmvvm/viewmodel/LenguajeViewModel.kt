@@ -7,11 +7,10 @@ import bootcamp.cl.ejemplo.lenguajesmvvm.model.LenguajeProvider
 
 class LenguajeViewModel: ViewModel() {
 
-    val lenguaje = MutableLiveData<LenguajeModel>()
-
+    val lenguajeModel = MutableLiveData<LenguajeModel>()
     fun randomLenguaje(){
         val lenguajeActual = LenguajeProvider.random()
-        lenguaje.postValue(lenguajeActual)
+        lenguajeModel.postValue(lenguajeActual)
     }
 
 }

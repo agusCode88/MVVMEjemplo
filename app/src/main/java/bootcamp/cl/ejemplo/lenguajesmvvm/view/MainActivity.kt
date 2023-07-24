@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
 
-        lenguajeViewModel.lenguaje.observe(this, Observer {
+        lenguajeViewModel.lenguajeModel.observe(this, Observer {
             mainBinding.descripcionLenguaje.text = it.descripcion
             mainBinding.nombreLenguaje.text= it.nombre
         })

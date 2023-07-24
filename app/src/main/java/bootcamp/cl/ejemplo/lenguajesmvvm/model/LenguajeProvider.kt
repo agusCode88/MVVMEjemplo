@@ -2,13 +2,12 @@ package bootcamp.cl.ejemplo.lenguajesmvvm.model
 
 class LenguajeProvider {
     companion object {
-
         fun random(): LenguajeModel {
             val position = (0..10).random()
-            return quotes[position]
+            return lenguajes[position]
         }
 
-        private val quotes = listOf(
+        private val lenguajes = listOf(
             LenguajeModel(
                 descripcion = "Python es un lenguaje de programación ampliamente utilizado en las " +
                         "aplicaciones web, el desarrollo de software, la ciencia de datos " +
